@@ -85,8 +85,25 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 
 ### VPC (Virtual Private Cloud)
 
-VPC Basics
-1. 
+**VPC Basics**
+1. By default, a VPC is made for you when you create an AWS account.
+2. VPC is conceptually similar to a home network
+	a. Home Network: Internet -> Modem -> Router/Switch -> Firewall -> Devices
+	b. VPC: Internet -> Internet Gateway -> Route Table -> NACL -? EC2 Instances
+
+**Internet Gateways (IGW)**
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
