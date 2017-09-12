@@ -74,7 +74,7 @@ Instance – many times an EC2 computer is referred to as an “EC2 Instance”
 ### PROJECT OMEGA
 https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 
-### IAM (IDENTITY & ACCESS MGMT)
+## IAM (IDENTITY & ACCESS MGMT)
 1. manage users and their access to AWS accounts and services
 2. Root user – user created when AWS account is created
 
@@ -83,7 +83,7 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 2. MFA (Multi-Factor Authentication) should always be set on your “root” account
 3. NEVER use your root account for day-to-day use
 
-### VPC (VIRTUAL PRIVATE CLOUD)
+## VPC (VIRTUAL PRIVATE CLOUD)
 
 **VPC Basics**
 1. By default, a VPC is made for you when you create an AWS account.
@@ -96,8 +96,8 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 continue VPC here ........
 
 
-
-### S3 - SIMPLE STORAGE SERVICE
+-------
+## S3 - SIMPLE STORAGE SERVICE
 
 ##### S3 BASICS
 1. Online, storage service accessible from almost any device  
@@ -105,8 +105,8 @@ continue VPC here ........
 3. Buckets are root folders  
 4. Folders are subfolders  
 5. Select region to store data in that region  
-6. **Best Practice**: select region closest to you reduct transfer latency or create bucket in region closest to customors  
-7 Charged by CG of storage and number of requests (PUT, GET, POST ..)  
+6. **Best Practice**: select region closest to you reduct transfer latency or create bucket in region closest to customers  
+7. Charged by CG of storage and number of requests (PUT, GET, POST ..)  
 
 ##### S3 BUCKETS AND FOLDERS
 1. Bucket name must be unique across all AWS  
@@ -162,7 +162,77 @@ continue VPC here ........
 3. Suspended versioning prevents future versioning  
   a. All previous verisons retained  
 4. Set up on the Bucket Level
+-------
 
+## EC2 - ELASTIC CLOUD COMPUTE
+
+##### ECS BASICS
+1. Scalable computing capacity  
+2. Can use one or many virtual servers  
+3. Types of Instances  
+  a. On-Demand:  
+    i. most expensive and flexible  
+    ii. charged when running (by hour)  
+  b. Reserved:  
+    i. purchase for 1-3 years  
+    ii. pay entire price upfront or later  
+  c. Spot:  
+    i. bid on instance type  
+    ii. pay when spot price is equal or below bid price  
+    iii. instance terminates when spot price > bid price  
+
+continue ............
+
+------
+
+## LAMBDA
+
+##### LAMBDA BASICS
+1. Serverless computing  
+2. Pay for requests, duration of use, accessing data from other AWS resources  
+3. Create Lambda Function  
+```
+$ aws lambda create-function \
+--region us-west-2 \
+--function-name helloworld \
+--zip-file fileb://file-path/helloworld.zip \
+--role role-arn \
+--handler helloworld.handler \
+--runtime nodejs6.10 \
+--profile adminuser 
+```
+
+continue ............
+
+-------
+
+## DYNAMO_DB & RDS
+
+##### DATABASE BASICS
+1. AWS offers RDS for SQL databases and DynamoDB for NoSQL databases  
+2. RDS  
+  a. Types:  
+    i.   Amazon Aurora  
+    ii.  MySQL  
+    iii. MariaDB  
+    iv.  PostgreSQL  
+    v.   Oracle  
+    vi.  Microsoft SQLServer  
+  b. Data stored in tables (columns & rows)  
+  c. Structured data, such as contact lists  
+3. DynamoDB
+  a. Types:  
+    i.   Mongo  
+    ii.  Cassandra  
+    iii. Oracle NoSQL  
+  b. Good for mobile, web, gaming, adtech, IoT  
+  c. Stored in JSON-like, name-value documents  
+  d. Unstructured data such as cataloging documents  
+
+
+continue ............
+
+-------
 
 ### CLOUDWATCH
 
