@@ -74,7 +74,7 @@ Instance – many times an EC2 computer is referred to as an “EC2 Instance”
 ### PROJECT OMEGA
 https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 
-### IAM (Identity & Access Management)
+### IAM (IDENTITY & ACCESS MGMT)
 1. manage users and their access to AWS accounts and services
 2. Root user – user created when AWS account is created
 
@@ -83,7 +83,7 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 2. MFA (Multi-Factor Authentication) should always be set on your “root” account
 3. NEVER use your root account for day-to-day use
 
-### VPC (Virtual Private Cloud)
+### VPC (VIRTUAL PRIVATE CLOUD)
 
 **VPC Basics**
 1. By default, a VPC is made for you when you create an AWS account.
@@ -92,6 +92,85 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 	b. VPC: Internet -> Internet Gateway -> Route Table -> NACL -? EC2 Instances
 
 **Internet Gateways (IGW)**
+
+continue VPC here ........
+
+
+
+### S3 - SIMPLE STORAGE SERVICE
+
+##### S3 BASICS
+1. Online, storage service accessible from almost any device  
+2. Can store any type of file  
+3. Buckets are root folders  
+4. Folders are subfolders  
+5. Select region to store data in that region  
+6. **Best Practice**: select region closest to you reduct transfer latency or create bucket in region closest to customors  
+7 Charged by CG of storage and number of requests (PUT, GET, POST ..)  
+
+##### S3 BUCKETS AND FOLDERS
+1. Bucket name must be unique across all AWS  
+2. 3-63 characters, lowercase, numbers, hyphens  
+3. Cannot be an IP address  
+4. Import objects (files) and create folders in the bucket  
+5. Bucket have the most properties
+6. Cannot set permissions on folders, but buckets and objects yet  
+
+##### S3 STORAGE CLASSES
+1. Object classification in S3  
+2. Classes = Standard, RRS (Reduced Redundancy Storage), S3-IA (Infreq Access), Glacier  
+3. Vary by cost, availablity, durability, access freq.  
+4. STANDARD:  
+  a. all-purporse storage  
+  b. default option  
+  c. most expensive, most durable (99.999999999%) and available (99.99%)  
+5. RRS:  
+  a. non-critical, reproducible objects  
+  b. 99.99% object durability and availability  
+  c. less expensive than Standard  
+6. S3-IA:  
+  a. for infrequent access, but needed immediatedly  
+  b. Durability = 99.999999999%  
+  c. Availablity = 99.90%  
+  d. less expensive than Standard & RRS  
+7. GLACIER:  
+  a. long-term archival storage  
+  b. takes several hours to retrieve  
+  c. Durablity = 99.999999999%  
+  d. very low cost  
+
+##### S3 OBJECT LIFECYCLES
+1. Rules that automate migration of object's storage class to a different class  
+2. Change classes based on future usage  
+  a. Update Lifecyle to match every day object (file) usage > weekly file usage > annual usage  
+3. Optimizes cost  
+
+##### S3 PERMISSIONS  
+1. Bucket Level Permissions  
+  a. List  
+  b. Upload / Delete  
+  c. View permissions  
+  d. Edit permissions  
+2. Object Level Permissions  
+  a. Open / Download  
+  b. View permissions  
+  c. Edit permissions  
+
+##### S3 VERSIONING  
+1. Tracks all old/new versions of an object  
+2. Once turned on you can only "suspend" versioning  
+3. Suspended versioning prevents future versioning  
+  a. All previous verisons retained  
+4. Set up on the Bucket Level
+
+
+### CLOUDWATCH
+
+**Service that allows you to monitor AWS resources & metrics:**
+1. Can monitor EC2, S3, Billing
+2. Use dashboard to view metrics
+3. Can set thresholds and alarms on metrics
+4. Charged based per dashboard, ec2 monitoring, custom metrics, api requests, logs, custom events
 
 
 
