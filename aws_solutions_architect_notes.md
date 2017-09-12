@@ -171,7 +171,7 @@ continue VPC here ........
 2. Can use one or many virtual servers  
 3. Types of Instances  
   a. On-Demand:  
-    i. most expensive and flexible  
+	 i. most expensive and flexible  
     ii. charged when running (by hour)  
   b. Reserved:  
     i. purchase for 1-3 years  
