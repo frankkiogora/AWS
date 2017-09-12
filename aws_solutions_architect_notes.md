@@ -169,7 +169,6 @@ continue VPC here ........
 ##### EC2 BASICS
 1. Scalable computing capacity  
 2. Can use one or many virtual servers  
-
 3. Types of Instances  
 	1. On-Demand:  
 		* most expensive and flexible  
