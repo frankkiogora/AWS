@@ -169,10 +169,11 @@ continue VPC here ........
 ##### EC2 BASICS
 1. Scalable computing capacity  
 2. Can use one or many virtual servers  
+
 3. Types of Instances  
-  a. On-Demand:  
-	 i. most expensive and flexible  
-    ii. charged when running (by hour)  
+	1. On-Demand:  
+		* most expensive and flexible  
+		* charged when running (by hour)  
   b. Reserved:  
     i. purchase for 1-3 years  
     ii. pay entire price upfront or later  
