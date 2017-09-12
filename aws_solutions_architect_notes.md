@@ -170,16 +170,16 @@ continue VPC here ........
 1. Scalable computing capacity  
 2. Can use one or many virtual servers  
 3. Types of Instances  
-	1. On-Demand:  
+	a. On-Demand:  
 		* most expensive and flexible  
 		* charged when running (by hour)  
-  b. Reserved:  
-    i. purchase for 1-3 years  
-    ii. pay entire price upfront or later  
-  c. Spot:  
-    i. bid on instance type  
-    ii. pay when spot price is equal or below bid price  
-    iii. instance terminates when spot price > bid price  
+	b. Reserved:  
+		* purchase for 1-3 years  
+		* pay entire price upfront or later  
+	c. Spot:  
+		* bid on instance type  
+		* pay when spot price is equal or below bid price  
+		* instance terminates when spot price > bid price  
 
 continue ............
 
