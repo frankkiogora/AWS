@@ -197,7 +197,8 @@ continue ............
 ##### LAMBDA BASICS  
 1. Serverless computing  
 2. Pay for requests, duration of use, accessing data from other AWS resources  
-3. Create Lambda Function  
+3. Use when you want to set up front-end serverless websites  
+4. Create Lambda Function  
 ```
 $ aws lambda create-function \
 --region us-west-2 \
