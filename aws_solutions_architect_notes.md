@@ -1,5 +1,6 @@
 # AWS Solutions Architect Certification  
 
+UDEMY COURSES TO TAKE:
 * AWS Concepts  
 * AWS Essentials  
 * AWS Solutions Architect  
@@ -13,7 +14,8 @@
 
 
 ******************************************************************************
-## AWS Concepts  
+
+# AWS CONCEPTS (UDEMY)  
 
 ### INTRODUCTION  
 
@@ -69,10 +71,13 @@ Instance – many times an EC2 computer is referred to as an “EC2 Instance”
 
 
 ******************************************************************************
-## AWS Essentials  
+
+# AWS ESSENTIALS (UDEMY)  
 
 ### PROJECT OMEGA  
 https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0  
+
+******************************************************************************
 
 ## IAM (IDENTITY & ACCESS MGMT)  
 1. manage users and their access to AWS accounts and services  
@@ -82,6 +87,8 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 1. When new AWS account is created, complete task listed in IAM under “Security Status”  
 2. MFA (Multi-Factor Authentication) should always be set on your “root” account  
 3. NEVER use your root account for day-to-day use  
+
+******************************************************************************
 
 ## VPC (VIRTUAL PRIVATE CLOUD)  
 
@@ -95,8 +102,8 @@ https://www.lucidchart.com/documents/view/703f6119-4838-4bbb-bc7e-be2fb75e89e5/0
 
 continue VPC here ........
 
+******************************************************************************
 
--------
 ## S3 - SIMPLE STORAGE SERVICE  
 
 ##### S3 BASICS  
@@ -162,7 +169,7 @@ continue VPC here ........
 3. Suspended versioning prevents future versioning  
 	1. All previous verisons retained  
 4. Set up on the Bucket Level
--------
+******************************************************************************
 
 ## EC2 - ELASTIC CLOUD COMPUTE
 
@@ -185,9 +192,9 @@ continue ............
 
 ------
 
-## LAMBDA
+## LAMBDA  
 
-##### LAMBDA BASICS
+##### LAMBDA BASICS  
 1. Serverless computing  
 2. Pay for requests, duration of use, accessing data from other AWS resources  
 3. Create Lambda Function  
@@ -204,11 +211,11 @@ $ aws lambda create-function \
 
 continue ............
 
--------
+******************************************************************************
 
-## DYNAMO_DB & RDS
+## DYNAMO_DB & RDS  
 
-##### DATABASE BASICS
+##### DATABASE BASICS  
 1. AWS offers RDS for SQL databases and DynamoDB for NoSQL databases  
 2. RDS  
 	1. Types:  
@@ -220,6 +227,7 @@ continue ............
 		* Microsoft SQLServer  
 	2. Data stored in tables (columns & rows)  
 	3. Structured data, such as contact lists  
+	4. Pay based on RDS you choose, RDS instance, On-Demand/Reserved, DB storage, Data transfer  
 3. DynamoDB
 	1. Types:  
 		* Mongo  
@@ -228,18 +236,39 @@ continue ............
 	2. Good for mobile, web, gaming, adtech, IoT  
 	3. Stored in JSON-like, name-value documents  
 	4. Unstructured data such as cataloging documents  
+	5. Pay based on capacity, DynamoDB streams, Reserved capacity, DB storage, Data transfer  
 
 
-continue ............
+continue ............  
 
--------
+******************************************************************************
 
-### CLOUDWATCH
 
-**Service that allows you to monitor AWS resources & metrics:**
-1. Can monitor EC2, S3, Billing
-2. Use dashboard to view metrics
-3. Can set thresholds and alarms on metrics
+## REDSHIFT  
+
+1. Used to query large amounts of big data from S3  
+2. Query from S3 cluster and SQL client that are in the same region  
+3. Cost = $5 / TB scanned  
+
+continue ............  
+
+******************************************************************************
+
+### CLOUDWATCH  
+
+**Service that allows you to monitor AWS resources & metrics:**  
+1. Can monitor EC2, S3, Billing  
+	1. EC2:  
+		* CPU utilization  
+		* Status checks  
+		* Disk read/writes  
+	2. S3:  
+		* Number of objects (files)  
+		* Bucket size  
+2. Use dashboard to view metrics  
+3. Can set thresholds and alarms on metrics  
+	1. View alarm in Cloudwatch  
+	2. Alarm can trigger SNS message  
 4. Charged based per dashboard, ec2 monitoring, custom metrics, api requests, logs, custom events
 
 
