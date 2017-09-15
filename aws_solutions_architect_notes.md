@@ -247,9 +247,14 @@ continue ............
 
 ## REDSHIFT  
 
-1. Used to query large amounts of big data from S3  
-2. Query from S3 cluster and SQL client that are in the same region  
-3. Cost = $5 / TB scanned  
+1. Internet Hosting service and database warehouse product  
+2. Used to query large amounts of big data from S3  
+3. Query from S3 cluster and SQL client that are in the same region  
+4. Cost = $5 / TB scanned  
+5. Integrates with popular BI tools  
+6. Setup  
+	1. Load cluster  
+	2. Connect favorite query tool  
 
 continue ............  
 
